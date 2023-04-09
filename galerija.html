@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script src="js/google-translate.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Галерија</title>
+    <style>
+      div.gallery {
+        border: 1px solid #ccc;
+      }
+
+      div.gallery:hover {
+        border: 1px solid #777;
+      }
+
+      div.gallery img {
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+      }
+
+      div.desc {
+        padding: 15px;
+        text-align: center;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .responsive {
+        padding: 0 6px;
+        float: left;
+        width: 24.99999%;
+      }
+
+      @media only screen and (max-width: 700px) {
+        .responsive {
+          width: 49.99999%;
+          margin: 6px 0;
+        }
+      }
+
+      @media only screen and (max-width: 500px) {
+        .responsive {
+          width: 100%;
+        }
+      }
+
+      .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="top">
+      <ul>
+        <li><a href="index.html">Дома</a></li>
+
+        <li><a href="#contact">Контакт</a></li>
+      </ul>
+
+      <div class="language">
+        <img
+          src="lang/lang__mk.png"
+          alt="ru"
+          data-google-lang="mk"
+          class="language__img"
+          width="24"
+          height="15"
+        />
+        <img
+          src="lang/lang__en.png"
+          alt="en"
+          data-google-lang="en"
+          class="language__img"
+          width="24"
+          height="15"
+        />
+        <img
+          src="lang/lang__de.png"
+          alt="de"
+          data-google-lang="de"
+          class="language__img"
+          width="24"
+          height="15"
+        />
+      </div>
+      <div class="hamburger" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </nav>
+
+    <h2>Ова е галерија на слики за село Велмеј</h2>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="velme2j.png">
+          <img src="velme2j.png" alt="Cinque Terre" width="600" height="400" />
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="vodopadot vo velmej.png">
+          <img
+            src="vodopadot vo velmej.png"
+            alt="Forest"
+            width="600"
+            height="400"
+          />
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="crkva sveti gjorgi.png">
+          <img
+            src="crkva sveti gjorgi.png"
+            alt="Northern Lights"
+            width="600"
+            height="400"
+          />
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="istok velmej.png">
+          <img
+            src="istok velmej.png"
+            alt="Mountains"
+            width="600"
+            height="400"
+          />
+        </a>
+        <div class="desc">Чешма Исток</div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="istok velmej.png">
+          <img
+            src="istok velmej.png"
+            alt="Mountains"
+            width="600"
+            height="400"
+          />
+        </a>
+        <div class="desc">Чешма Исток</div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="istok velmej.png">
+          <img
+            src="istok velmej.png"
+            alt="Mountains"
+            width="600"
+            height="400"
+          />
+        </a>
+        <div class="desc">Чешма Исток</div>
+      </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <h4 id="contact">
+      За Повеќе Информации Контактирајте Ме На:
+      <a
+        href="https://myaccount.google.com/?hl=en&utm_source=OGB&utm_medium=act"
+        >Slavco.Stankoski123@gmail.com</a
+      >
+    </h4>
+    <script src="script.js"></script>
+  </body>
+</html>
